@@ -51,6 +51,58 @@ The journey from your input to the final answer involves several clear steps:
 
 ## Task 2: Setting up the Visual Studio Code
 
+In this task, you will configure the visual studio code with Azure credentials and create a new project for api.
 
+1. From the JumpVM, double click on **Visual Studio Code** icon.
+
+1. Once the Visual Studio Code is open, on the ***Welcome*** pane, click on **Open Folder**.
+
+   ![](./media/ex1img1.png)
+
+1. Navigate to `C:\LabFiles\agent-api\` and click on **Select Folder**.
+
+   ![](./media/ex1img2.png)
+
+1. Now from the **Visual Studio Code** pane left menu, select **Azure** icon and click on **Sign in to Azure**.
+
+   ![](./media/ex1img3.png)
+
+1. In the pop up window, click om **Allow**.
+
+   ![](./media/ex1img4.png)
+
+1. Use the following credentials to sign in:
+
+- **Useremail:**
+
+   ![](./media/ex1img5.png)
+
+- **Password:**
+
+   ![](./media/ex1img6.png)
+
+1. Once the authentication is completed, select **View** from the top menu and click on **Command Palette**.
+
+   ![](./media/ex1img7.png)
+
+1. In the command palette, search and select **Azure Functions: Create New Project**.
+
+   ![](./media/ex1img8.png)
+
+1. Now in the next step, select **agent-api** folder, where the project will be initiated.
+
+   ![](./media/ex1img9.png)
+
+1. In the **Select a language** pane, choose **Python**.
+
+   ![](./media/ex1img10.png)
+
+1. In the next pane, select **Model V2**.
+
+   ![](./media/ex1img11.png)
+
+1. 
+
+   ![](./)
 
 
