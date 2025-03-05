@@ -8,7 +8,7 @@ In this exercise, you'll create a basic AI Agent powered by Azure OpenAI's GPT-4
 
 ## Lab Objectives
 
-After you complete this exercise, you will:
+After completing this exercise, you will:
 
 - Understand AI Agents and how they process prompts autonomously
 - Setting up the Visual Studio Code
