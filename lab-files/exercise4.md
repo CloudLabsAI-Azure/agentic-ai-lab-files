@@ -257,10 +257,144 @@ In this task, you will add a reinforcement learning component. While a full-scal
 
 1. Now from the resource list, select **logicapp-<inject key="DeploymentID" enableCopy="false"/>**.
 
-1. 
+   ![](./media/ex4img14.png)
+
+1. In **Logic app** pane, select **Logic app templates (1)** from left menu and click on the option **Request-Response: Receive and respond to messages over HTTP or HTTPS (2)**.
+
+   ![](./media/ex4img15.png)
+
+1. Inside workflow pane, select **Use this template** option.
+
+   ![](./media/ex4img16.png)
+
+1. In the next pane, click on **Update**.
+
+   ![](./media/ex4img17.png)
+
+1. Once you clicked on update, you will be navigated to design pane and the flow will look similar to this.
+
+   ![](./media/ex4img18.png)
+
+1. As you are adding a connector for email, the response node is not required here. Right-Click on **Response** node and select **Delete** option to delete the node.
+
+   ![](./media/ex4img19.png)
+
+1. Once clicked on delete, a prompt will be opened. Click on **OK** to continue with the deletion.
+
+   ![](./media/ex4img20.png)
+
+1. Select **When a HTTP reuest is received (1)** node, add the below given **JSON Body (2)** under **Request Body JSON Schema** and use the **Copy (3)** option to copy the **HTTP URL** of Logic App and note it down in a notepad safely.
+
+   ![](./media/ex4img24.png)
+
+1. Once done, click on **+** and select **Add an action**.
+
+   ![](./media/ex4img21.png)
+
+1. From the list of actions, search and select **Send email with options** action under **Outlook.com**.
+
+   ![](./media/ex4img22.png)
+
+1. On the Create connection pane, click on **Sign in**.
+
+   ![](./media/ex4img23.png)
+
+1. Once done, save the logic app flow using the **Save** option from top menu.
+
+   ![](./media/ex4img25.png)
 
 ### Task 5: Validate Customer Service Agent with Escalation Workflow
 
+In this task, you'll validate customer service agent by running the application and testing it with diffrent prompts to check its flow.
+
+1. In the Azure Portal, from the home pane, select **resource groups** under **Navigate**.
+
+   ![](./media/ex1img17.png)
+
+1. From the list select **agent-<inject key="DeploymentID" enableCopy="false"/>** resource group.
+
+   ![](./media/ex1img18.png)
+
+1. From the resource list, select **openai-<inject key="DeploymentID" enableCopy="false"/>**.
+
+   ![](./media/ex2img2.png)
+
+1. In the **Azure OpenAI** page, select **Keys and Endpoint (1)** from the left menu, under **Resource Management**. Copy **Key 1 (2)** and **Endpoint (2)** values and note it safely in a notepad, as you will use this further in this task.
+
+   ![](./media/ex2img7.png)
+   
+   > This **Key 1** value will be `AZURE_OPENAI_KEY` and **Endpoint** value will be `AZURE_OPENAI_ENDPOINT`.
+
+1. Once copied, navigate to **Visual Studio Code** pane and select **.env** file under backend.
+
+   ![](./media/ex4img26.png)
+
+1. Now add the copied values in the **.env** file, once added the file will look similar to this.
+
+   ![](./media/ex4img27.png)
+
+1. In the **Visual Studio Code** pane, select terminal from the top menu and click on **new terminal**. This opens a powershell terminal window at bottom.
+
+   ![](./media/ex2img13.png)
+
+1. In the terminal pane, run the following command to navigate to backend folder and install requirements.
+
+   ```
+   cd backend
+   pip install -r requirements.txt
+   ```
+   
+   >This will install all the dependencies which are required to run the backend which are mentioned in the **requirements.txt** file.
+
+1. Once after the installation is completed, run the following command to start the backend.
+
+   ```
+   python app.py
+   ```
+
+   ![](./media/ex2img14.png)
+
+1. From the terminal output, copy the URL value as shown and paste it in your browser.
+
+   ![](./media/ex4img28.png)
+
+1. Now the application running on your browser will look similar to this.
+
+   ![](./media/ex4img29.png)
+
+1. As the application is running, test out the customer service agent with some prompts.
+
+1. First, use a prompt which will just use the **faq_retriver** file to retrive the answer.
+
+   ```
+   What is your return policy?
+   ```
+
+1. Paste the **Prompt (1)** on the area, click on **Submit Query (2)** button, once submitted a **response (3)** will shown and you can use the **Thumbs Up & Thumbs Down (4)** symbols to give the feedback as Positive or negetive.
+
+   ![](./media/ex4img33.png)
+
+1. Once you click on any of the feedback symbols, you will get a prompt, please click on **OK**.
+
+   ![](./media/ex4img30.png)
+
+1. Next, use the below prompt, which will retrive the answer using the Genrative AI capabilities.
+
+   ```
+   Can you explain how two-factor authentication works?
+   ```
+
+   ![](./media/ex4img31.png)
+
+1. Now, as the agent is giving response for all the simple and general queries, use key words like `urgent`, `immediate`, `asap` to trigger the escalation workflow. This will send a notification to support email that you have provided in `.env` file.
+
+   ```
+   I need immediate assistance with my order; it's urgent!
+   ```
+
+   ![](./media/ex4img32.png)
+
+1. Now, you can check that, you have received notifications to that provided email. The customer service agent is now successfully running.
 
 ### Task 6: Monitor agent learning progress and refine the workflow (Read-Only)
 
