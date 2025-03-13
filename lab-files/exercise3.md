@@ -15,7 +15,7 @@ After completing this exercise, you will:
 - Setting up the codebase for multi-agent colloboration
 - Test multi-agent collaboration with real-world scenarios
 
-### Task 1: Design an AI Orchestration Framework for multiple agents
+## Task 1: Design an AI Orchestration Framework for multiple agents
 
 Modern AI applications often require handling diverse types of inputs—such as text and images—and performing specialized processing for each. To achieve this, In this task we will divide the backend into multiple agent with their distinct roles :
 
@@ -145,7 +145,7 @@ Modern AI applications often require handling diverse types of inputs—such as 
 
 1. Once after making the changes, please use **CTRL + S** to save the file. Now you have successfully divided the backend into two diffrent agent.
 
-### Task 2: Implement context awareness and Knowledge sharing for AI Agents
+## Task 2: Implement context awareness and Knowledge sharing for AI Agents
 
 In this task, you will design and develop two modules: a Knowledge Manager and a Context Manager.
 
@@ -210,7 +210,7 @@ In this task, you will design and develop two modules: a Knowledge Manager and a
 
 1. Once after making changes, please save the file using **CTRL +S**. Now you have successfully implemented context awareness with a shared knowledge base.
 
-### Task 3: Setting up the codebase for multi-agent colloboration
+## Task 3: Setting up the codebase for multi-agent colloboration
 
 As you have implemented all the functionality required for a multi-agent setup. In this task, you will configure all the environment variables required such as endpoints and API keys and setup the environment with all the dependecies.
 
@@ -224,7 +224,7 @@ As you have implemented all the functionality required for a multi-agent setup. 
 
 1. Once after updating the file, use **CTRL + S** to save the changes. Now the agent is completly setup, you will be validating the agent in the next task.
 
-### Task 4: Test multi-agent collaboration with real-world scenarios
+## Task 4: Test multi-agent collaboration with real-world scenarios
 
 In this task, you will first install all the dependencies and run the application to validate the agent with sample inputs.
 

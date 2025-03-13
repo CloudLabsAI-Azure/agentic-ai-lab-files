@@ -17,7 +17,7 @@ After completing this exercise, you will:
 - Validate Customer Service Agent with Escalation Workflow
 - Monitor agent learning progress and refine the workflow
 
-### Task 1: Create a Customer Service AI Agent capable of handling user queries
+## Task 1: Create a Customer Service AI Agent capable of handling user queries
 
 In this task, you will create a customer service agent that handles customer queries. It will use predefined responses for common questions, and if the query does not match any of the predefined cases, it will generate an answer using a chat completion model.
 
@@ -99,7 +99,7 @@ In this task, you will create a customer service agent that handles customer que
 
 1. Please use **CTRL + S** to save the file.
 
-### Task 2: Implement an Escalation Workflow for complex queries
+## Task 2: Implement an Escalation Workflow for complex queries
 
 In this task, you will implement an escalation workflow that allows the agent to determine whether to respond directly to the customer or escalate the issue to human support.
 
@@ -139,7 +139,7 @@ In this task, you will implement an escalation workflow that allows the agent to
 
 1. Please use **CTRL + S** to save the file.
 
-### Task 3: Enable real-time notifications for escalation
+## Task 3: Enable real-time notifications for escalation
 
 In this task, you will implement the notification workflow by creating an Azure Logic App flow. This flow will be triggered when a customer query is marked for escalation, and it will send an email notification to the designated support email address.
 
@@ -182,7 +182,7 @@ In this task, you will implement the notification workflow by creating an Azure 
 
 1. Please use **CTRL + S** to save the file.
 
-### Task 4: Integrate RLHF to improve AI decision-making through human feedback
+## Task 4: Integrate RLHF to improve AI decision-making through human feedback
 
 In this task, you will add a reinforcement learning component. While a full-scale system would require large amounts of data for continuous model improvement, for this lab we will implement a simple feedback collector. This collector will capture user feedback and store it in a file, demonstrating how human input can be gathered and later used to refine the AI agent's decision-making and overall performance.
 
@@ -303,7 +303,7 @@ In this task, you will add a reinforcement learning component. While a full-scal
 
    ![](./media/ex4img25.png)
 
-### Task 5: Validate Customer Service Agent with Escalation Workflow
+## Task 5: Validate Customer Service Agent with Escalation Workflow
 
 In this task, you'll validate customer service agent by running the application and testing it with diffrent prompts to check its flow.
 
@@ -396,7 +396,7 @@ In this task, you'll validate customer service agent by running the application 
 
 1. Now, you can check that, you have received notifications to that provided email. The customer service agent is now successfully running.
 
-### Task 6: Monitor agent learning progress and refine the workflow (Read-Only)
+## Task 6: Monitor agent learning progress and refine the workflow (Read-Only)
 
 In this task, you will review the collected user feedback stored in the feedbacks.json file. Although we are not implementing live model retraining in this lab, you will learn how the gathered feedback data can be analyzed to assess the agent’s performance. This data provides insights into which responses are effective and which ones need improvement, forming the basis for fine-tuning the AI agent in a production environment.
 

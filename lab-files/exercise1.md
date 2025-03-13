@@ -55,11 +55,13 @@ In this task, you will configure the visual studio code with Azure credentials a
 
 1. From the JumpVM, double click on **Visual Studio Code** icon.
 
-1. Once the Visual Studio Code is open, on the ***Welcome*** pane, click on **Open Folder**.
+   ![](./media/vscdimg.png)
 
-   ![](./media/ex1img1.png)
+1. Once the Visual Studio Code is open, select **file** from the top menu and click on **open folder**.
 
-1. Navigate to `C:\LabFiles\agent-api\` and click on **Select Folder**.
+   ![](./media/ex2img8.png)
+
+1. Navigate to `C:\code-files\agent-api\` and click on **Select Folder**.
 
    ![](./media/ex1img2.png)
 
@@ -77,7 +79,7 @@ In this task, you will configure the visual studio code with Azure credentials a
 
    ![](./media/ex1img5.png)
 
-- **Password:** **<inject key="AzureAdUserEmail"></inject>**
+- **Password:** **<inject key="AzureAdUserPassword"></inject>**
 
    ![](./media/ex1img6.png)
 
@@ -96,7 +98,7 @@ In this task, you will configure the visual studio code with Azure credentials a
 1. In the **Select a language** pane, choose **Python**.
 
    ![](./media/ex1img10.png)
-
+   
 1. In the next pane, select **Model V2**.
 
    ![](./media/ex1img11.png)
@@ -205,9 +207,9 @@ In this task, you will configure the visual studio code with Azure credentials a
 
    ![](./media/ex1img20.png)
 
-1. In the AI Foundry Portal, select **Deployments (1)** from the left menu and click on **gpt-40** model that is predeployed.
+1. In the AI Foundry Portal, select **Deployments (1)** from the left menu and click on **gpt-35-turbo** model that is predeployed.
 
-   ![](./media/ex1img21.png)
+   ![](./media/ex2nimg5.png)
 
 1. From the **Details** pane, copy **Target URI**, **Key** value and note these values down safely in a notepad.
 

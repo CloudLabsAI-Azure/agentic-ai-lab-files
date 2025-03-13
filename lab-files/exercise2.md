@@ -17,7 +17,7 @@ After completing this exercise, you will:
 - Setting up the codebase for Multimodal agent
 - Validate Multi-Modal AI Agent with sample inputs
 
-### Task 1: Integrate Speech-to-Text & Text-to-Speech to enable voice-based AI interactions
+## Task 1: Integrate Speech-to-Text & Text-to-Speech to enable voice-based AI interactions
 
 In this task, you will implement voice-based interactions using the Web Speech API, enabling both speech-to-text (STT) and text-to-speech (TTS) functionalities in a web application.
 
@@ -103,7 +103,7 @@ In this task, you will implement voice-based interactions using the Web Speech A
 
 1. Once after completing the implementation, please use **CTRL + S** to save the changes. Now you have successfully implemented the speech recognition feature for the agent.
 
-### Task 2: Implement Computer Vision API to analyse and process images
+## Task 2: Implement Computer Vision API to analyse and process images
 
 In the previous task, you have implemented speech recognition functionality, now, In this task, you will integrate a Computer Vision API into your application to automatically analyze and process images.
 
@@ -203,7 +203,7 @@ In the previous task, you have implemented speech recognition functionality, now
 
 1. Once after updating, please use **CTRL + S** to save the file. Now you have sucessfully implemented image analysis functionality in the agent.
 
-### Task 3: Setting up the codebase for Multimodal agent
+## Task 3: Setting up the codebase for Multimodal agent
 
 As you have implemented all the functionality required for a multimodal agent. In this task, you will configure all the environment variables required such as endpoints and API keys and setup the environment with all the dependecies.
 
@@ -245,7 +245,7 @@ As you have implemented all the functionality required for a multimodal agent. I
 
 1. Once after updating the file, use **CTRL + S** to save the changes. Now the agent is completly setup, you will be validating the agent in the next task.
 
-### Task 4: Validate Multi-Modal AI Agent with sample inputs
+## Task 4: Validate Multi-Modal AI Agent with sample inputs
 
 In this task, you will first install all the dependencies and run the application to validate the agent with sample inputs.
 
