@@ -83,6 +83,10 @@ In this task, you will configure the visual studio code with Azure credentials a
 
    ![](./media/ex1img6.png)
 
+1. In the next pane, select **No, this app only** and continue.
+
+   ![](./media/ex1nimg2.png)
+
 1. Once the authentication is completed, select **View** from the top menu and click on **Command Palette**.
 
    ![](./media/ex1img7.png)
@@ -103,6 +107,10 @@ In this task, you will configure the visual studio code with Azure credentials a
 
    ![](./media/ex1img11.png)
 
+1. In the next pane, select **Skip virtual environment**.
+
+      ![](./media/ex1nimg3.png)
+
 1. In the next pane, select **HTTP trigger** as the template to create the function.
 
    ![](./media/ex1img12.png)
@@ -110,6 +118,10 @@ In this task, you will configure the visual studio code with Azure credentials a
 1. In the input box, provide the function name as `agentapi`.
 
    ![](./media/ex1img13.png)
+
+1. In the next pane, select **ANONYMOUS**.
+
+   ![](./media/ex1nimg4.png)
 
 1. Once the function is created you will be able to see the starter codefiles.
 
@@ -195,7 +207,7 @@ In this task, you will configure the visual studio code with Azure credentials a
 
    ![](./media/ex1img17.png)
 
-1. From the list select **agent-<inject key="DeploymentID" enableCopy="false"/>** resource group.
+1. From the list select **agent** resource group.
 
    ![](./media/ex1img18.png)
 
@@ -214,14 +226,6 @@ In this task, you will configure the visual studio code with Azure credentials a
 1. From the **Details** pane, copy **Target URI**, **Key** value and note these values down safely in a notepad.
 
    ![](./media/ex1img22.png)
-
-1. Navigate back to the resource group page, from the resource list, select the storage account. The name starts as **agent** with some suffix.
-
-   ![](./media/ex1img23.png)
-
-1. From overview pane, select **Access Keys (1)**, click on **Show (2)** and copy **Connection string (3)** value.
-
-   ![](./media/ex1img24.png)
 
 1. From the resource list, select **agent-function-<inject key="DeploymentID" enableCopy="false"/>** function app.
 
@@ -269,29 +273,27 @@ In this task, we will deploy our locally developed AI Agent function from Visual
 
 ### Task 4: Test AI Agent Responses using REST API
 
-In this task, we will test the deployed AI Agent API using a REST API testing tool Hoppscotch(Postwoman). You will configure the tool with your Azure Function App endpoint, set the necessary HTTP headers and payload, and send a test request to verify that the agent processes the input correctly and returns an appropriate response. This task ensures that your API is functioning as expected and provides a baseline for further integration and troubleshooting.
+In this task, we will test the deployed AI Agent API using a REST API testing tool cURL. You will configure the tool with your Azure Function App endpoint, set the necessary HTTP headers and payload, and send a test request to verify that the agent processes the input correctly and returns an appropriate response. This task ensures that your API is functioning as expected and provides a baseline for further integration and troubleshooting.
 
 1. As you have successfully deployed agent, now its time to test it.
 
-1. Navigate to [Hoppscotch](https://hoppscotch.io) to test your API. Hoppscotch is a free, open-source API development tool that simplifies testing, debugging, and documenting APIs.
+1. In your **JumpVM**, using the **Search** option from desktop, search and select **Git Bash**.
 
-1. Once you are in the Hoppscotch portal, the UI will look similar to this.
+   ![](./media/ex1nimg5.png)
 
-   ![](./media/ex1img39.png)
+1. Once the **Git Bash** terminal is opened, run the following command. This will do a POST request to your agent function, with a prompt `tell me a joke`, for which you will get a response from your API.
 
-1. Now paste this cURL in the input box. Now a Import cURL pane will open, review the URL and click on **Import**.
+   ```
+   curl -X POST "https://agent-function-1638165.azurewebsites.net/api/agent" \
+     -H "Content-Type: application/json" \
+     -d '{"message": "tell me a joke"}'
+   ```
 
-   ![](./media/ex1img36.png)
-   
-   > In this request, you are doing a **POST** request to the API which is running in the Function App with the message `tell me a joke`. This will query the GPT model with the message and gets back the response.
+   ![](./media/ex1nimg6.png)
 
-1. Once imported, the portal look like this. Click on **Send** to send the request.
+1. Once after pasting this, hit enter and you will get a response back with a simple joke from your API.
 
-   ![](./media/ex1img37.png)
-
-1. Now you can see the response from the Agent API which is running in the Function App.
-
-   ![](./media/ex1img38.png)
+   ![](./media/ex1nimg7.png)
 
 ## Summary
 

@@ -31,7 +31,7 @@ Modern AI applications often require handling diverse types of inputs—such as 
 
    ![](./media/ex2img8.png)
 
-1. In the select folder pane, navigate to `C:\LabFiles`, select **multi-agent (1)** folder and click on **select folder (2)**.
+1. In the select folder pane, navigate to `C:\code-files`, select **multi-agent (1)** folder and click on **select folder (2)**.
 
    ![](./media/ex3img1.png)
 
@@ -262,6 +262,10 @@ In this task, you will first install all the dependencies and run the applicatio
    ```
 
 1. Once the installation is completed, run the following command to run the application. Copy the localhost url `http://localhost:5173/`.
+
+   ```
+   npm run dev
+   ```
 
    ![](./media/ex2img16.png)
 

@@ -25,7 +25,7 @@ In this task, you will create a customer service agent that handles customer que
 
    ![](./media/ex4img1.png)
 
-1. In the select folder pane, navigate to `C:\LabFiles`, select **customer-support (1)** folder and click on **select folder (2)**.
+1. In the select folder pane, navigate to `C:\code-files`, select **customer-support (1)** folder and click on **select folder (2)**.
 
    ![](./media/ex4img6.png)
 
@@ -400,7 +400,7 @@ In this task, you'll validate customer service agent by running the application 
 
 In this task, you will review the collected user feedback stored in the feedbacks.json file. Although we are not implementing live model retraining in this lab, you will learn how the gathered feedback data can be analyzed to assess the agent’s performance. This data provides insights into which responses are effective and which ones need improvement, forming the basis for fine-tuning the AI agent in a production environment.
 
-1. Navigate back to ** Visual Studio Code** pane, you can see a `feedback.json` file will be created. Open the file.
+1. Navigate back to **Visual Studio Code** pane, you can see a `feedback.json` file will be created. Open the file.
 
 1. Once the file is open, go through the file once to check how it is structured and how those are marked as positive and negetive according to the options selected.
 

@@ -25,7 +25,7 @@ In this task, you will implement voice-based interactions using the Web Speech A
 
    ![](./media/ex2img8.png)
 
-1. In the select folder pane, navigate to `C:\LabFiles`, select **multimodal (1)** folder and click on **select folder (2)**. You need to implement speech recognition feature using these TODO definitions.
+1. In the select folder pane, navigate to `C:\code-files`, select **multimodal (1)** folder and click on **select folder (2)**. You need to implement speech recognition feature using these TODO definitions.
 
    ![](./media/ex2img9.png)
 
@@ -211,7 +211,7 @@ As you have implemented all the functionality required for a multimodal agent. I
 
    ![](./media/ex1img17.png)
 
-1. From the list select **agent-<inject key="DeploymentID" enableCopy="false"/>** resource group.
+1. From the list select **agent** resource group.
 
    ![](./media/ex1img18.png)
 
@@ -284,6 +284,10 @@ In this task, you will first install all the dependencies and run the applicatio
 
 1. Once the installation is completed, run the following command to run the application. Copy the localhost url `http://localhost:5173/`.
 
+   ```
+   npm run dev
+   ```
+
    ![](./media/ex2img16.png)
 
 1. Navigate to your agent application from the browser, using the URL copied. The application will look similar to this.
@@ -294,7 +298,7 @@ In this task, you will first install all the dependencies and run the applicatio
 
    ![](./media/ex2img18.png)
 
-1. Now, test the image analysis functionality. Click on **Upload Image** option and navigate to `C:\Labfiles\multimodal\images`, where you will get some of the images for experimenting with the agent.
+1. Now, test the image analysis functionality. Click on **Upload Image** option and navigate to `C:\code-files\multimodal\images`, where you will get some of the images for experimenting with the agent.
 
    ![](./media/ex2img19.png)
 
@@ -317,12 +321,6 @@ In this task, you will first install all the dependencies and run the applicatio
 1. Once after you completed talking, you can see the transcribed messaged, review the message and click on **Send Button** to send the message.
 
    ![](./media/ex2img23.png)
-
-1. You can see a response for the transcribed message. This validates that speechg recognition is working properly. Use the speaker option from the response to get the output as audio.
-
-   ![](./media/ex2img24.png)
-
-   >Now you've successfully enhanced AI Agent with Multi-Modal capabilities.
 
 ## Summary
 
