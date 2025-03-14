@@ -295,6 +295,13 @@ In this task, we will test the deployed AI Agent API using a REST API testing to
 
    ![](./media/ex1nimg7n.png)
 
+<validation step="60a5f85b-1945-49af-874d-8e75528042af" />
+ 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to hel
+
 ## Summary
 
 In this exercise, you have explored AI Agents, configured Visual Studio Code with Azure credentials to create an API project, deployed your AI Agent function to an Azure Function App, and tested the API using Hoppscotch.

@@ -285,21 +285,81 @@ In this task, you will add a reinforcement learning component. While a full-scal
 
 1. Select **When a HTTP reuest is received (1)** node, add the below given **JSON Body (2)** under **Request Body JSON Schema** and use the **Copy (3)** option to copy the **HTTP URL** of Logic App and note it down in a notepad safely.
 
+   ```
+   {
+    "type": "object",
+    "properties": {
+    "subject": {
+      "type": "string"
+     },
+    "body": {
+      "type": "string"
+     },
+     "to": {
+       "type": "string"
+     }
+    },
+     "required": [
+     "subject",
+     "body",
+     "to"
+     ]
+    }
+    ```
+
    ![](./media/ex4img24n.png)
 
 1. Once done, click on **+** and select **Add an action**.
 
    ![](./media/ex4img21n.png)
 
-1. From the list of actions, search and select **Send email with options** action under **Outlook.com**.
+1. From the list of actions, search and select **Send email with options (3)** action under **Office 365 Outlook (2)**.
 
-   ![](./media/ex4img22n.png)
+   ![](./media/ex4img43.png)
 
 1. On the Create connection pane, click on **Sign in**.
 
    ![](./media/ex4img23n.png)
 
-1. Once done, save the logic app flow using the **Save** option from top menu.
+1. In the **Pick an account** pane, select the account from the list, which you are using for this lab.
+
+1. Once done, a new pane will be opened, which look similar to this.
+
+   ![](./media/ex4img35.png)
+
+1. Click on the placeholder (input box) for **To** parameter. You can see two option, click on the below shown option to select a parameter. This allows you to select **To** variable which you can send dynamically with the HTTP request from your application.
+
+   ![](./media/ex4img36.png)
+
+1. From the list, select **to** parameter.
+
+   ![](./media/ex4img37.png)
+
+1. Now, under **Advanced parameters**, click on **Clear all** to clear all the default parameters.
+
+   ![](./media/ex4img40.png)
+
+1. Select **V (1)** option under **Advanced parameters**, from the list, select **body (2)** and **subject (3)** parameters.
+
+   ![](./media/ex4img41.png)
+
+1. Click on the placeholder (input box) for **body** parameter. You can see two option, click on the below shown option to select a parameter. This allows you to select **body** variable which you can send dynamically with the HTTP request from your application.
+
+   ![](./media/ex4img36.png)
+
+1. From the list, select **body** parameter.
+
+   ![](./media/ex4img39.png)
+
+1. Click on the placeholder (input box) for **subject** parameter. You can see two option, click on the below shown option to select a parameter. This allows you to select **subject** variable which you can send dynamically with the HTTP request from your application.
+
+   ![](./media/ex4img36.png)
+
+1. From the list, select **subject** parameter.
+
+   ![](./media/ex4img38.png)
+
+1. Once the configurations are done, save the logic app flow using the **Save** option from top menu.
 
    ![](./media/ex4img25n.png)
 
@@ -329,9 +389,11 @@ In this task, you'll validate customer service agent by running the application 
 
    ![](./media/ex4img26n.png)
 
-1. Now add the copied values in the **.env** file, once added the file will look similar to this.
+1. Now add the copied values in the **.env**, once added the file will look similar to this.
 
    ![](./media/ex4img27n.png)
+
+   > Please provide the values for `AZURE_OPENAI_KEY`, `AZURE_OPENAI_ENDPOINT`, `LOGIC_APP_TRIGGER_URL` and add the `SUPPORT_EMAIL` as **<inject key="AzureAdUserEmail"></inject>**.
 
 1. In the **Visual Studio Code** pane, select terminal from the top menu and click on **new terminal**. This opens a powershell terminal window at bottom.
 
@@ -407,6 +469,13 @@ In this task, you will review the collected user feedback stored in the feedback
    > After interacting with the customer service agent, user feedback (e.g., thumbs up or thumbs down) is recorded and saved in the feedbacks.json file. By opening this file, you can see a log of queries, the agent’s responses, and the corresponding feedback. In a real-world scenario, this feedback is aggregated and analyzed to identify patterns and recurring issues.
 
    > Such analysis helps determine whether the agent’s responses are meeting customer needs or if adjustments are necessary. The insights obtained from this review can be used to fine-tune the AI model—by retraining it with additional data or adjusting its parameters—to improve its decision-making and overall efficiency.
+
+<validation step="b3e7bb60-e582-42f9-966d-782b41052327" />
+ 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to hel
 
 ## Summary 
 

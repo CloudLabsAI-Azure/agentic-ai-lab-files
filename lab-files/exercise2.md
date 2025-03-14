@@ -322,6 +322,13 @@ In this task, you will first install all the dependencies and run the applicatio
 
    ![](./media/ex2img23n.png)
 
+<validation step="f5faa2ea-4aeb-40e4-b0cc-3e6891ae64d3" />
+ 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to hel
+
 ## Summary
 
 In this exercise, you extended an AI Agent with AI Services to process voice, images, and text. You integrated Speech-to-Text and Text-to-Speech capabilities to enable voice-based AI interactions. Additionally, you leveraged the Computer Vision API to analyze and process images. By combining text, voice, and image inputs, you enhanced the AI Agent’s responses, making it more interactive and intelligent. Finally, you validated the Multi-Modal AI Agent using sample inputs to ensure its effectiveness.
