@@ -29,15 +29,15 @@ Modern AI applications often require handling diverse types of inputs—such as 
 
 1. Navigate to **Visual Studio Code**, select **file** from the top menu and click on **open folder** to open multimodal code files.
 
-   ![](./media/ex2img8.png)
+   ![](./media/ex2img8n.png)
 
 1. In the select folder pane, navigate to `C:\code-files`, select **multi-agent (1)** folder and click on **select folder (2)**.
 
-   ![](./media/ex3img1.png)
+   ![](./media/ex3img1n.png)
 
 1. Once the code files are open, navigate to **agents** folder under **backend** and select **planning_agent.py** to implement planning agent.
 
-   ![](./media/ex3img2.png)
+   ![](./media/ex3img2n.png)
 
 1. Add the following code to complete the planning agent setup.
 
@@ -54,7 +54,7 @@ Modern AI applications often require handling diverse types of inputs—such as 
    
 1. Once after adding the code file will look similar to this.
 
-   ![](./media/ex3img3.png)
+   ![](./media/ex3img3n.png)
 
    > **Note:** Python is sensitive for indentation, please make sure that it will look similar to this
 
@@ -62,7 +62,7 @@ Modern AI applications often require handling diverse types of inputs—such as 
 
 1. Now, select **execution_agent.py** file and navigate to **TODO 2** definition. You have to implement execution agent that will proceed with the flow, which was decided by planning agent.
 
-   ![](./media/ex3img4.png)
+   ![](./media/ex3img4n.png)
 
 1. Add the following code under **TODO 2** definition to complete the execution agent setup.
 
@@ -139,7 +139,7 @@ Modern AI applications often require handling diverse types of inputs—such as 
 
 1. Once after adding the code file will look similar to this.
 
-   ![](./media/ex3img5.png)
+   ![](./media/ex3img5n.png)
 
    > **Note:** Python is sensitive for indentation, please make sure that it will look similar to this
 
@@ -155,7 +155,7 @@ In this task, you will design and develop two modules: a Knowledge Manager and a
 
 1. As you are already inside the **agents** folder in **Visual Studio Code**, select **context_manager.py** file to implement context awareness feature.
 
-   ![](./media/ex3img6.png)
+   ![](./media/ex3img6n.png)
 
 1. Add the following code snippet under **TODO 3** definition.
 
@@ -175,13 +175,13 @@ In this task, you will design and develop two modules: a Knowledge Manager and a
 
 1. Once after adding, the code file will look similar to this.
 
-   ![](./media/ex3img7.png)
+   ![](./media/ex3img7n.png)
 
 1. Once after making the changes, please use **CTRL + S** to save the file.
 
 1. Now, select **knowledge_manager.py** file to create a knowledge base that shares knowledge between agents.
 
-   ![](./media/ex3img8.png)
+   ![](./media/ex3img8n.png)
 
 1. Add the following code snippet under **TODO 4** definition to complete knowledge base setup.
 
@@ -206,7 +206,7 @@ In this task, you will design and develop two modules: a Knowledge Manager and a
 
 1. After adding the code snippet, the file will look similar to this.
 
-   ![](./media/ex3img9.png)
+   ![](./media/ex3img9n.png)
 
 1. Once after making changes, please save the file using **CTRL +S**. Now you have successfully implemented context awareness with a shared knowledge base.
 
@@ -216,11 +216,11 @@ As you have implemented all the functionality required for a multi-agent setup. 
 
 1. In the**Visual Studio Code's** **Explorer (1)** pane, select **.env (2)** file under backend folder and you can see the **environment variables (3)** are declared in the file.
 
-   ![](./media/ex2img11.png)
+   ![](./media/ex2img11n.png)
 
 1. Update the file with the environemnt variables that you have copied in the previous exercise. Once after updating, the file will look similar to this.
 
-   ![](./media/ex2img12.png)
+   ![](./media/ex2img12n.png)
 
 1. Once after updating the file, use **CTRL + S** to save the changes. Now the agent is completly setup, you will be validating the agent in the next task.
 
@@ -230,7 +230,7 @@ In this task, you will first install all the dependencies and run the applicatio
 
 1. In the **Visual Studio Code** pane, select terminal from the top menu and click on **new terminal**. This opens a powershell terminal window at bottom.
 
-   ![](./media/ex2img13.png)
+   ![](./media/ex2img13n.png)
 
 1. In the terminal pane, run the following command to navigate to backend folder and install requirements.
 
@@ -247,13 +247,13 @@ In this task, you will first install all the dependencies and run the applicatio
    python app.py
    ```
 
-   ![](./media/ex2img14.png)
+   ![](./media/ex2img14n.png)
 
 1. Now, as the background is running keep the terminal open and open a new terminal for further steps.
 
 1. Select **V (1)** option and click on **Powershell (2)** from the list. This will open a new powershell terminal window.
 
-   ![](./media/ex2img15.png)
+   ![](./media/ex2img15n.png)
 
 1. In the terminal, run the following command to install the node modules which are required to run this appliaction.
 
@@ -267,21 +267,21 @@ In this task, you will first install all the dependencies and run the applicatio
    npm run dev
    ```
 
-   ![](./media/ex2img16.png)
+   ![](./media/ex2img16n.png)
 
 1. Navigate to your agent application from the browser, using the URL copied. The application will look similar to this.
 
-   ![](./media/ex3img12.png)
+   ![](./media/ex3img12n.png)
 
 1. Now, just give a prompt - `hello, my name is john` or you can use your name also so that after few prompts you can check if it remembers your name or not.
 
-   ![](./media/ex3img10.png)
+   ![](./media/ex3img10n.png)
 
    >Experiment with some prompts.
 
 1. Once done, just give a prompt like - `can you tell me, what all thing we discussed till now?` to validate its knowledge sharing and context awareness feature.
 
-   ![](./media/ex3img11.png)
+   ![](./media/ex3img11n.png)
 
 1. Now you have successfully developed a Multi-Agent AI Assistant.
 

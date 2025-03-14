@@ -30,7 +30,7 @@ This architecture integrates various Azure services to create a robust, AI-drive
 
 ## Architecture Diagram
 
-![](./media/agentic-ai-arch.png)
+![](./media/agentic-ai-archn.png)
 
 ## Explanation of Components
 
@@ -54,43 +54,43 @@ Welcome to Building Intelligent Multi-Agent Systems with Azure AI Services Hands
 
 Once you're ready to dive in, your virtual machine and Lab guide will be right at your fingertips within your web browser.
 
-![](./media/gs-1.png)
+![](./media/gs-1n.png)
 
 ### Exploring Your Lab Resources
 
 To get a better understanding of your Lab resources and credentials, navigate to the Environment tab.
 
-![](./media/gs-2.png)
+![](./media/gs-2n.png)
 
 ### Utilizing the Split Window Feature
 
 For convenience, you can open the Lab guide in a separate window by selecting the Split Window button from the Top right corner
 
-![](./media/gs-3.png)
+![](./media/gs-3n.png)
 
 ### Managing Your Virtual Machine
 
 Feel free to start, stop, or restart your virtual machine as needed from the Resources tab. Your experience is in your hands!
 
-![](./media/gs-4.png)
+![](./media/gs-4n.png)
 
 ## Let's Get Started with Azure Portal
 
 1. In the JumpVM, click on **Azure portal** shortcut of Microsoft Edge browser which is created on desktop.
 
-   ![](./media/gs-5.png)
+   ![](./media/gs-5n.png)
 
 1. On the **Sign into Microsoft Azure** tab, you will see the login screen. Enter the provided email or username, and click **Next** to proceed.
 
    - Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-     ![](./media/gs-6.png)
+     ![](./media/gs-6n.png)
 
 1. Now, enter the following password and click on **Sign in**.
 
    - Password: <inject key="AzureAdUserPassword"></inject>
 
-     ![](./media/gs-7.png)
+     ![](./media/gs-7n.png)
 
      >**Note:** If you see the Action Required dialog box, then select Ask Later option.
      

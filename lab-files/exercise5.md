@@ -20,35 +20,35 @@ In this task, you will explore resource-specific metrics via Azure Monitor and t
 
 1. From the resource list, select **openai-<inject key="DeploymentID" enableCopy="false"/>** Azure OpenAI resource.
 
-   ![](./media/ex5img1.png)
+   ![](./media/ex5img1n.png)
 
 1. In the **Azure OpenAI** pane, select **Metrics** from left menu under **Monitoring**. Select **Azure OpenAI Requests**.
 
-   ![](./media/ex5img2.png)
+   ![](./media/ex5img2n.png)
 
 1. Once selected, check the graph. This will show the total requests made to Azure OpenAI. You can try diffrent metrics and try out the metrics capabilities.
 
-   ![](./media/ex5img4.png)
+   ![](./media/ex5img4n.png)
 
 1. Once done, navigate back to resource group page, from the resource list, select **vision-<inject key="DeploymentID" enableCopy="false"/>** AI Vision service.
 
-   ![](./media/ex5img5.png)
+   ![](./media/ex5img5n.png)
 
 1. In the **AI Vision** pane, select **Metrics** from left menu under **Monitoring**. Select **Data In** as Metric. Observe the graph, which shows total data that is ingested by Azure AI Vision Service.
 
-   ![](./media/ex5img6.png)
+   ![](./media/ex5img6n.png)
 
 1. Once done, navigate back to resource group page, from the resource list, select **loganalytics-<inject key="DeploymentID" enableCopy="false"/>** Log Analytics Workspace.
 
-   ![](./media/ex5img11.png)
+   ![](./media/ex5img11n.png)
 
 1. From **Log Anaytics Workspace** resource pane, select **Logs** from left menu and click on **x** to cancel the tutorial.
 
-   ![](./media/ex5img12.png)
+   ![](./media/ex5img12n.png)
 
 1. In the **Logs** pane, change the mode from **Simple mode** to **KQL mode**, using the option from top right menu.
 
-   ![](./media/ex5img7.png)
+   ![](./media/ex5img7n.png)
 
 1. Now, the KQL query pane will be opened, run the following query to get the top 50 logs from Azure Diagnostic Settings.
 
@@ -58,7 +58,7 @@ In this task, you will explore resource-specific metrics via Azure Monitor and t
    | take 50
    ```
 
-   ![](./media/ex5img8.png)
+   ![](./media/ex5img8n.png)
 
 1. Once done, run the following query to check the logs which conatins **agent** keyword.
 
@@ -69,7 +69,7 @@ In this task, you will explore resource-specific metrics via Azure Monitor and t
    | order by TimeGenerated desc
    ```
 
-   ![](./media/ex5img9.png)
+   ![](./media/ex5img9n.png)
 
 1. As you have already got the logs from Azure Diagnostic Settings, now run the following query to get the logs of **OpenAI** resource from **Allmetrics** table.
 
@@ -78,7 +78,7 @@ In this task, you will explore resource-specific metrics via Azure Monitor and t
    | where Resource contains "OpenAI"
    ```
 
-   ![](./media/ex5img10.png)
+   ![](./media/ex5img10n.png)
 
    > These are just basic examples of KQL queries and monitoring techniques that can be used to track your AI Agent workload on Azure. However, Azure Monitor and Log Analytics offer much more advanced capabilities, such as setting up real-time alerts for failures or unusual behavior, detailed performance monitoring to track latency and error patterns, and anomaly detection to identify unexpected spikes in failures or request volumes. Additionally, you can create custom dashboards for visual insights and perform correlation analysis to link AI failures with external factors like system load or API issues. By leveraging these tools, you can proactively manage and optimize your AI Agent for better efficiency, reliability, and performance.
 
