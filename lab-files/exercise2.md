@@ -335,13 +335,7 @@ In this task, you will first install all the dependencies and run the applicatio
 
    ![](./media/ex2img20n.png)
 
-1. Once after click on **Mic** option, your browser will prompt as **Use your microphones**, click on **Allow**.
-
-   ![](./media/ex2img26n.png)
-
-1. Once after you completed talking, you can see the transcribed messaged, review the message and click on **Send Button** to send the message.
-
-   ![](./media/ex2img23n.png)
+   > **Note:** In this lab environment, the Text-to-Speech and Speech-to-Text features will not function due to the limitations of audio redirection in an RDP-over-HTTPS experience. However, you can fully experience these features by running the application on your on-premise system, where audio input and output are supported.
 
 <validation step="f5faa2ea-4aeb-40e4-b0cc-3e6891ae64d3" />
  
