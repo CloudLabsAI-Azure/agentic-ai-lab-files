@@ -193,6 +193,8 @@ In this task, you will configure the visual studio code with Azure credentials a
 
    ![](./media/ex1img14n.png)
 
+   > **Note:** Python is sensitive for indentation, please make sure that it will look similar to this
+
 1. Once updated use **CTRL + S** to save the updated file.
 
 1. Select **requirement.txt** file and add **requests** package to it as shown.

@@ -57,6 +57,8 @@ In this task, you will create a customer service agent that handles customer que
 
    ![](./media/ex4img3n.png)
 
+   > **Note:** Python is sensitive for indentation, please make sure that it will look similar to this
+
 1. Please use **CTRL + S** to save the file.
 
 1. From the list, select **customer_service_agent.py** to implement the logic.
@@ -97,6 +99,8 @@ In this task, you will create a customer service agent that handles customer que
 
    ![](./media/ex4img5n.png)
 
+   > **Note:** Python is sensitive for indentation, please make sure that it will look similar to this
+
 1. Please use **CTRL + S** to save the file.
 
 ## Task 2: Implement an Escalation Workflow for complex queries
@@ -136,6 +140,8 @@ In this task, you will implement an escalation workflow that allows the agent to
 1. Once after adding the code file will look similar to this.
 
    ![](./media/ex4img8n.png)
+
+   > **Note:** Python is sensitive for indentation, please make sure that it will look similar to this
 
 1. Please use **CTRL + S** to save the file.
 
@@ -179,6 +185,8 @@ In this task, you will implement the notification workflow by creating an Azure 
 1. Once after adding the code file will look similar to this.
 
    ![](./media/ex4img10n.png)
+
+   > **Note:** Python is sensitive for indentation, please make sure that it will look similar to this
 
 1. Please use **CTRL + S** to save the file.
 
@@ -234,6 +242,8 @@ In this task, you will add a reinforcement learning component. While a full-scal
 1. Once after adding the code file will look similar to this.
 
    ![](./media/ex4img13n.png)
+
+   > **Note:** Python is sensitive for indentation, please make sure that it will look similar to this
 
 1. Please use **CTRL + S** to save the file.
 
@@ -313,19 +323,19 @@ In this task, you will add a reinforcement learning component. While a full-scal
 
    ![](./media/ex4img21n.png)
 
-1. From the list of actions, search and select **Send email with options (3)** action under **Office 365 Outlook (2)**.
+1. From the list of actions, search and select **Send an email (v2) (3)** action under **Office 365 Outlook (2)**.
 
-   ![](./media/ex4img43.png)
+   ![](./media/ex4img47.png)
 
 1. On the Create connection pane, click on **Sign in**.
 
    ![](./media/ex4img23n.png)
 
+   > **Note:** if you get an error like **The browser has blocked the popup window**, please click on **popup (1)** option and select **Always allow pop-ups and redirects from https://portal.azure.com (2)**. Click on **Done (3)**.
+
+   ![](./media/ex4img45.png)
+
 1. In the **Pick an account** pane, select the account from the list, which you are using for this lab.
-
-1. Once done, a new pane will be opened, which look similar to this.
-
-   ![](./media/ex4img35.png)
 
 1. Click on the placeholder (input box) for **To** parameter. You can see two option, click on the below shown option to select a parameter. This allows you to select **To** variable which you can send dynamically with the HTTP request from your application.
 
@@ -334,14 +344,6 @@ In this task, you will add a reinforcement learning component. While a full-scal
 1. From the list, select **to** parameter.
 
    ![](./media/ex4img37.png)
-
-1. Now, under **Advanced parameters**, click on **Clear all** to clear all the default parameters.
-
-   ![](./media/ex4img40.png)
-
-1. Select **V (1)** option under **Advanced parameters**, from the list, select **body (2)** and **subject (3)** parameters.
-
-   ![](./media/ex4img41.png)
 
 1. Click on the placeholder (input box) for **body** parameter. You can see two option, click on the below shown option to select a parameter. This allows you to select **body** variable which you can send dynamically with the HTTP request from your application.
 
@@ -359,6 +361,10 @@ In this task, you will add a reinforcement learning component. While a full-scal
 
    ![](./media/ex4img38.png)
 
+1. Once done, the configuration will look similar to this.
+
+   ![](./media/ex4img48.png)
+
 1. Once the configurations are done, save the logic app flow using the **Save** option from top menu.
 
    ![](./media/ex4img25n.png)
@@ -366,24 +372,6 @@ In this task, you will add a reinforcement learning component. While a full-scal
 ## Task 5: Validate Customer Service Agent with Escalation Workflow
 
 In this task, you'll validate customer service agent by running the application and testing it with diffrent prompts to check its flow.
-
-1. In the Azure Portal, from the home pane, select **resource groups** under **Navigate**.
-
-   ![](./media/ex1img17n.png)
-
-1. From the list select **agent-<inject key="DeploymentID" enableCopy="false"/>** resource group.
-
-   ![](./media/ex1img18n.png)
-
-1. From the resource list, select **openai-<inject key="DeploymentID" enableCopy="false"/>**.
-
-   ![](./media/ex2img2n.png)
-
-1. In the **Azure OpenAI** page, select **Keys and Endpoint (1)** from the left menu, under **Resource Management**. Copy **Key 1 (2)** and **Endpoint (2)** values and note it safely in a notepad, as you will use this further in this task.
-
-   ![](./media/ex2img7n.png)
-   
-   > This **Key 1** value will be `AZURE_OPENAI_KEY` and **Endpoint** value will be `AZURE_OPENAI_ENDPOINT`.
 
 1. Once copied, navigate to **Visual Studio Code** pane and select **.env** file under backend.
 
@@ -456,7 +444,17 @@ In this task, you'll validate customer service agent by running the application 
 
    ![](./media/ex4img32n.png)
 
-1. Now, you can check that, you have received notifications to that provided email. The customer service agent is now successfully running.
+1. Now, you can check that, you have received notifications to that provided email. 
+
+1. Navigate to [outlook](https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=173&ct=1742213070&rver=7.5.2211.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26culture%3den-us%26country%3dus%26RpsCsrfState%3d3fced9d2-13b4-7bb4-d7e2-c78136d3589d&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c), to check the email notification. 
+
+1. Use the same credentials, that you used before to login to **Outlook**.
+
+1. Now, you can see the escalated notification that will be shown in the inbox.
+
+   ![](./media/ex4img49.png)
+
+1. Your Customer support workflow is successfully working as expected.
 
 ## Task 6: Monitor agent learning progress and refine the workflow (Read-Only)
 

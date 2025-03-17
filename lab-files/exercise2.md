@@ -48,6 +48,7 @@ In this task, you will implement voice-based interactions using the Web Speech A
 
    ![](./media/ex2sst4n.png)
 
+   > **Note:** Python is sensitive for indentation, please make sure that it will look similar to this
 
 1. Now, navigate to **TODO 2** definition.
 
@@ -75,6 +76,8 @@ In this task, you will implement voice-based interactions using the Web Speech A
 
    ![](./media/ex2sst5newn.png)
 
+   > **Note:** Python is sensitive for indentation, please make sure that it will look similar to this
+
 1. Now, navigate to **TODO 3** definition.
 
    ![](./media/ex2sst3n.png)
@@ -100,6 +103,8 @@ In this task, you will implement voice-based interactions using the Web Speech A
 1. After adding the snippet, it will look similar to this.
 
    ![](./media/ex2sst6n.png)
+
+   > **Note:** Python is sensitive for indentation, please make sure that it will look similar to this
 
 1. Once after completing the implementation, please use **CTRL + S** to save the changes. Now you have successfully implemented the speech recognition feature for the agent.
 
@@ -149,46 +154,60 @@ In the previous task, you have implemented speech recognition functionality, now
    @app.route('/api/analyze-image', methods=['POST'])
    def analyze_image():
       try:
-         # TODO: Check if an image file is included in the request
          if 'image' not in request.files:
                return jsonify({"error": "No image provided"}), 400
          
          image_file = request.files['image']
          prompt = request.form.get('prompt', 'Describe this image in detail.')
-
-         # TODO: Save the uploaded image temporarily
+         
+         # Save image temporarily
          temp_image_path = "temp_image.jpg"
          image_file.save(temp_image_path)
-
+         
          with open(temp_image_path, "rb") as f:
                image_data = f.read()
-
+         
          try:
-               # TODO: Send the image data to Azure Vision API for analysis
                result = vision_client.analyze(
                   image_data=image_data,
                   visual_features=[
-                     VisualFeatures.CAPTION,  # Get image description
-                     VisualFeatures.TAGS,  # Get related keywords
-                     VisualFeatures.OBJECTS  # Detect objects
+                     VisualFeatures.CAPTION,
+                     VisualFeatures.TAGS,
+                     VisualFeatures.OBJECTS
                   ]
                )
-
-               # TODO: Extract relevant details from the analysis result
+            
                caption = result.caption.text if result.caption else ""
                tags = [getattr(tag, "name", str(tag)) for tag in result.tags] if result.tags else []
                objects = [getattr(obj, "name", str(obj)) for obj in result.objects] if result.objects else []
-
+            
          except Exception as analysis_error:
                logger.error(f"Image analysis error: {str(analysis_error)}")
                return jsonify({"error": "Failed to analyze image"}), 500
-
-         # TODO: Format the analysis result into a response
-         return jsonify({
-               "caption": caption,
-               "tags": tags,
-               "objects": objects
-         })
+   
+         analysis_prompt = f"""
+            Image Analysis:
+            - Caption: {caption}
+            - Tags: {', '.join(tags)}
+            - Objects: {', '.join(objects)}
+            """
+         analysis_prompt += f"\n\nUser prompt: {prompt}\n\nBased on the image analysis above, please respond to the user's prompt."
+         
+         response = openai.ChatCompletion.create(
+               engine=azure_openai_deployment,
+               messages=[
+                  {"role": "system", "content": "You are a helpful assistant that analyzes images."},
+                  {"role": "user", "content": analysis_prompt}
+               ],
+               temperature=0.7,
+               max_tokens=800
+         )
+         
+         ai_message = response.choices[0].message.content
+         
+         os.remove(temp_image_path)
+         
+         return jsonify({"message": ai_message})
       
       except Exception as e:
          logger.error(f"Error in analyze-image endpoint: {str(e)}")
@@ -200,6 +219,8 @@ In the previous task, you have implemented speech recognition functionality, now
 1. After updating the code will look similar to this.
 
    ![](./media/ex2sst12n.png)
+
+   > **Note:** Python is sensitive for indentation, please make sure that it will look similar to this
 
 1. Once after updating, please use **CTRL + S** to save the file. Now you have sucessfully implemented image analysis functionality in the agent.
 
