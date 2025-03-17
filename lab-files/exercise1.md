@@ -284,7 +284,7 @@ In this task, we will test the deployed AI Agent API using a REST API testing to
 1. Once the **Git Bash** terminal is opened, run the following command. This will do a POST request to your agent function, with a prompt `tell me a joke`, for which you will get a response from your API.
 
    ```
-   curl -X POST "https://agent-function-1638165.azurewebsites.net/api/agent" \
+   curl -X POST "https://agent-function-<inject key="DeploymentID" enableCopy="false"/>.azurewebsites.net/api/agent" \
      -H "Content-Type: application/json" \
      -d '{"message": "tell me a joke"}'
    ```
