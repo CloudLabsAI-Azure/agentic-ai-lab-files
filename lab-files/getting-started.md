@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this lab, the focus was on building a comprehensive AI system using Azure's advanced services. The lab began by creating a basic AI Agent powered by Azure OpenAI's GPT-4 and deploying it as an API to demonstrate how AI Agents autonomously process prompts and generate intelligent responses. The next phase extended the agent into a multimodal system by integrating Speech-to-Text, Text-to-Speech, and Computer Vision APIs, enabling the handling of text, voice, and image inputs simultaneously for richer, context-aware interactions. Following that, an AI Orchestration Framework was designed that incorporated a Planning Agent and an Execution Agent to efficiently route and process tasks based on user inputs. Finally, the lab showcased the implementation of a customer service agent that not only responded to queries but also escalated complex or urgent issues to human support via Azure Logic Apps, while integrating a simple feedback mechanism to collect human input for future improvements.
+In this lab, the focus was on building a comprehensive AI system using Azure's advanced services. The lab began by creating a basic AI Agent powered by Azure OpenAI's GPT-35-turbo and deploying it as an API to demonstrate how AI Agents autonomously process prompts and generate intelligent responses. The next phase extended the agent into a multimodal system by integrating Speech-to-Text, Text-to-Speech, and Computer Vision APIs, enabling the handling of text, voice, and image inputs simultaneously for richer, context-aware interactions. Following that, an AI Orchestration Framework was designed that incorporated a Planning Agent and an Execution Agent to efficiently route and process tasks based on user inputs. Finally, the lab showcased the implementation of a customer service agent that not only responded to queries but also escalated complex or urgent issues to human support via Azure Logic Apps, while integrating a simple feedback mechanism to collect human input for future improvements.
 
 ## Objective
 
@@ -30,7 +30,7 @@ This architecture integrates various Azure services to create a robust, AI-drive
 
 ## Architecture Diagram
 
-![](./media/agentic-ai-archn.png)
+![](./media/agentic-ai-arch.png)
 
 ## Explanation of Components
 

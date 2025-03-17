@@ -4,7 +4,7 @@
 
 ## Lab Scenario
 
-In this exercise, you'll create a basic AI Agent powered by Azure OpenAI's GPT-4 and deploy it as an API within an hour. You'll begin by understanding how AI Agents autonomously process prompts to generate intelligent responses, then build your agent using GPT-4. Next, you'll deploy the AI Agent as an Azure Function to expose it via an API, enabling easy integration with other services. Finally, you'll test the functionality of your agent using both the Python SDK and REST API to ensure it responds accurately.
+In this exercise, you'll create a basic AI Agent powered by Azure OpenAI's GPT-35-turbo and deploy it as an API within an hour. You'll begin by understanding how AI Agents autonomously process prompts to generate intelligent responses, then build your agent using GPT-35-turbo. Next, you'll deploy the AI Agent as an Azure Function to expose it via an API, enabling easy integration with other services. Finally, you'll test the functionality of your agent using both the Python SDK and REST API to ensure it responds accurately.
 
 ## Lab Objectives
 
