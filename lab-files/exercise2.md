@@ -246,7 +246,7 @@ As you have implemented all the functionality required for a multimodal agent. I
    
    > This **Key 1** value will be `AZURE_OPENAI_KEY` and **Endpoint** value will be `AZURE_OPENAI_ENDPOINT`.
 
-1. Now, from the resource list in the resource group pane, select **ai-vision-<inject key="DeploymentID" enableCopy="false"/>** AI Vision resource.
+1. Now, from the resource list in the resource group pane, select **vision-<inject key="DeploymentID" enableCopy="false"/>** AI Vision resource.
 
    ![](./media/ex2img1n.png)  
 
