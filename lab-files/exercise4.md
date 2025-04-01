@@ -335,7 +335,21 @@ In this task, you will add a reinforcement learning component. While a full-scal
 
    ![](./media/ex4img45.png)
 
-1. In the **Pick an account** pane, select the account from the list, which you are using for this lab.
+1. In the **Pick an account** pane, select **Use another account** option.
+
+   ![](./media/pick-acc.jpg)
+
+1. Use the following credentials to sign in:
+
+- **Useremail:** **<inject key="AzureAdUserEmail"></inject>**
+
+   ![](./media/ex1img5n.png)
+
+- **Password:** **<inject key="AzureAdUserPassword"></inject>**
+
+   ![](./media/ex1img6n.png)
+
+1. Once signed in, you'll be able to see the **Send an email (v2)** configuartion pane.
 
 1. Click on the placeholder (input box) for **To** parameter. You can see two option, click on the below shown option to select a parameter. This allows you to select **To** variable which you can send dynamically with the HTTP request from your application.
 
