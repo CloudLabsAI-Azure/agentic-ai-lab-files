@@ -341,11 +341,11 @@ In this task, you will add a reinforcement learning component. While a full-scal
 
 1. Use the following credentials to sign in:
 
-- **Useremail:** **<inject key="AzureAdUserEmail"></inject>**
+   - **Useremail:** **<inject key="AzureAdUserEmail"></inject>**
 
    ![](./media/ex1img5n.png)
 
-- **Password:** **<inject key="AzureAdUserPassword"></inject>**
+   - **Password:** **<inject key="AzureAdUserPassword"></inject>**
 
    ![](./media/ex1img6n.png)
 
